@@ -3,30 +3,21 @@
     padding: 0;
 }
 
-$theBestColor: rgb(21, 21, 107);
+html,
+body {
+  margin: 0;
+}
 
-div {
-    div.containerForWaringMessage {
-        margin: auto 1em;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        // z-index: 1000;
+#App {
+  font-family: sans-serif;
 
-        img {
-            object-fit: contain;
-        }
+  /* Give app full page to work with */
+  height: 100vh;
+}
 
-        h1 {
-            color: $theBestColor;
-            font-size: 4rem;
-            text-align: center;
-        }
+#page-wrap {
+  text-align: center;
 
-        p {
-            font-size: 2rem;
-            text-align: center;
-        }
-    }
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
 }
