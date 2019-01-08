@@ -1,25 +1,27 @@
 import React, {Component, Fragment} from 'react';
 import {scaleRotate as Menu} from 'react-burger-menu'
+import {Link, HashRouter, Route, Switch} from "react-router-dom";
+
 
 export default class BugerMenu extends Component {
   render() {
     return (<Fragment>
-      <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
-        <a className="menu-item" href="/">
+      <Menu isOpen={false} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+        <Link className="menu-item" to={"/"}>
           Home
-        </a>
+        </Link>
 
-        <a className="menu-item" href="/about">
+        <Link className="menu-item" to={"/about"}>
           About
-        </a>
+        </Link>
 
-        <a className="menu-item" href="/portfolio">
+        <Link className="menu-item" to={"/portfolio"}>
           Portfolio
-        </a>
+        </Link>
 
-        <a className="menu-item" href="/contact">
+        <Link className="menu-item" to={"/contact"}>
           Contact
-        </a>
+        </Link>
       </Menu>
     </Fragment>);
   }
