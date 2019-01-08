@@ -4,7 +4,7 @@ export default class Start extends Component {
     render() {
         return (
             <Fragment>
-              <h1 className="text-center">Hello World!</h1>
+              <h1 className="text-center">Paweł Białek Portfolio</h1>
             </Fragment>
         );
     }

@@ -1,22 +1,20 @@
+import React, {Component, Fragment} from 'react';
+import {HashRouter, Route, Switch} from "react-router-dom";
 
-import React, { Component, Fragment } from 'react';
-import { HashRouter, Route, Switch } from "react-router-dom";
-
-import Start from './Start';
-import Menu from './Menu'
+import BurgerMenu from './Menu'
 import NotFound from './NotFound';
+import Start from './Start';
+
 
 export default class App extends Component {
-    render() {
-        return (
-            <div>
-              <div id="outer-container">
-                <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } />
-                <main id="page-wrap">
-                    <Start/>
-                </main>
-              </div>
-            </div>
-        );
-    }
+  render() {
+    return (<div id="outer-container" style={{
+        height: '100vh'
+      }}>
+      <BurgerMenu/>
+      <main id="page-wrap">
+        <Start/>
+      </main>
+    </div>);
+  }
 }
