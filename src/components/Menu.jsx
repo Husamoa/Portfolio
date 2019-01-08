@@ -9,15 +9,15 @@ export default class BugerMenu extends Component {
           Home
         </a>
 
-        <a className="menu-item" href="/burgers">
+        <a className="menu-item" href="/about">
           About
         </a>
 
-        <a className="menu-item" href="/pizzas">
+        <a className="menu-item" href="/portfolio">
           Portfolio
         </a>
 
-        <a className="menu-item" href="/desserts">
+        <a className="menu-item" href="/contact">
           Contact
         </a>
       </Menu>
