@@ -9,6 +9,21 @@
   transition: color 0.2s;
 }
 
+#logo {
+  pointer-events: none;
+  color: white;
+  margin-bottom: 1em;
+  span {
+    margin-left: 1em;
+  }
+}
+
+.bm-item {
+  span {
+    margin-left: 2em;
+  }
+}
+
 /* Change color on hover */
 .bm-item:hover {
   color: white;
