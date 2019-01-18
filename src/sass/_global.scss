@@ -9,21 +9,5 @@ html {
 }
 
 #App {
-  font-family: sans-serif;
-  /* Give app full page to work with */
   height: 100vh;
-}
-
-#page-wrap {
-  text-align: center;
-  /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
-}
-
-main {
-  height: 100%;
-  padding: 6em 2em;
-  text-align: center;
-  background: #b4bad2;
-  overflow: auto;
 }

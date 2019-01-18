@@ -1,27 +1,27 @@
 import React, {Component, Fragment} from 'react';
 import {Link, HashRouter, Route, Switch} from "react-router-dom";
 
-import BurgerMenu from './Menu'
+import Menu from './Menu'
 import NotFound from './NotFound';
 import Start from './Start';
 
 export default class App extends Component {
   render() {
-    return (<div id="outer-container" style={{
-        height: '100vh'
-      }}>
+    return (<div className="container-fluid">
       <HashRouter>
-        <div>
-          <BurgerMenu/>
-          <main id="page-wrap" style={{height: '100vh'}}>
+        <div className="row">
+          <div className="col-sm-4">
+            <Menu/>
+          </div>
+          <div className="col-sm-8">
             <Switch>
-              <Route exact path='/' component={Start}/>
+              <Route exact="exact" path='/' component={Start}/>
+              <Route exact="exact" path='/home' component={Start}/>
               <Route path='/about' component={NotFound}/>
               <Route path='/contact' component={NotFound}/>
               <Route component={NotFound}/>
             </Switch>
-          </main>
-
+          </div>
         </div>
       </HashRouter>
     </div>);
