@@ -7,13 +7,13 @@ import Start from './Start';
 
 export default class App extends Component {
   render() {
-    return (<div className="container-fluid">
+    return (<div>
       <HashRouter>
-        <div className="row">
-          <div className="col-sm-4">
+        <div className="row no-gutters">
+          <div className="col-md-4">
             <Menu/>
           </div>
-          <div className="col-sm-8">
+          <div className="col-md-8">
             <Switch>
               <Route exact path='/' component={Start}/>
               <Route path='/home' component={Start}/>
