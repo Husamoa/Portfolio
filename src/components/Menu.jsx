@@ -7,7 +7,7 @@ export default class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navClass: ""
+      navClass: "",
     };
   }
 
@@ -21,7 +21,11 @@ export default class Menu extends Component {
         navClass: ""
       })
     }
+  }
 
+  closeMenu = () => {
+    let collapse = document.querySelector(".collapse");
+    collapse.classList.remove("show");
   }
 
 
@@ -39,8 +43,8 @@ export default class Menu extends Component {
               <span></span>
               <span></span>
           </div>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
+          <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
+            <ul className="navbar-nav ml-auto" >
               <li className="nav-item">
                 <NavLink className="nav-link js-scroll-trigger" to={"/home"}>
                   <FontAwesomeIcon icon={faHome}/>
