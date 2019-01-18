@@ -15,8 +15,8 @@ export default class App extends Component {
           </div>
           <div className="col-sm-8">
             <Switch>
-              <Route exact="exact" path='/' component={Start}/>
-              <Route exact="exact" path='/home' component={Start}/>
+              <Route exact path='/' component={Start}/>
+              <Route path='/home' component={Start}/>
               <Route path='/about' component={NotFound}/>
               <Route path='/contact' component={NotFound}/>
               <Route component={NotFound}/>
