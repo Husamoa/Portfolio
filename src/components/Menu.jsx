@@ -4,32 +4,43 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faStar, faUser, faHome, faPhone, faFile} from '@fortawesome/free-solid-svg-icons'
 
 export default class Menu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navClass: ""
+    };
+  }
+
+  changeNavClass = () => {
+    if(this.state.navClass === "") {
+      this.setState({
+        navClass: "open"
+      })
+    } else {
+      this.setState({
+        navClass: ""
+      })
+    }
+
+  }
+
+
   render() {
-    $(document).ready(function() {
-      $('#nav-icon3').click(function() {
-        $(this).toggleClass('open');
-      });
-    });
     return (<Fragment>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <div id="nav-icon3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
+        <NavLink className="navbar-brand" to={"/"}>
+          <FontAwesomeIcon icon={faStar}/>
+          <span>Paweł Białek</span>
+        </NavLink>
+        <div onClick={this.changeNavClass} className="container-fluid">
+          <div id="nav-icon3" className={this.state.navClass} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-
-
           </div>
-          <div className="navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <NavLink className="nav-link js-scroll-trigger" to={"/"}>
-                  <FontAwesomeIcon icon={faStar}/>
-                  <span>Paweł Białek</span>
-                </NavLink>
-              </li>
               <li className="nav-item">
                 <NavLink className="nav-link js-scroll-trigger" to={"/home"}>
                   <FontAwesomeIcon icon={faHome}/>
