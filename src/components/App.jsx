@@ -10,10 +10,10 @@ export default class App extends Component {
     return (<div>
       <HashRouter>
         <div className="row no-gutters">
-          <div className="col-md-4">
+          <div className="col-xl-6">
             <Menu/>
           </div>
-          <div className="col-md-8">
+          <div className="col-xl-6">
             <Switch>
               <Route exact path='/' component={Start}/>
               <Route path='/home' component={Start}/>
