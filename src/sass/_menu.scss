@@ -91,7 +91,22 @@
     justify-content: center;
     align-items: center;
   }
+
+  .desktop-menu {
+    display: none;
+  }
 }
+
+@media only screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+// General -> without media queries
 
 .navbar-nav {
   .nav-link {
