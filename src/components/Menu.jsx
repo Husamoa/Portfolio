@@ -34,7 +34,7 @@ export default class Menu extends Component {
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
-          <NavLink className="navbar-brand" to={"/"}>
+          <NavLink className="navbar-brand" to={"/"} replace>
             <FontAwesomeIcon icon={faStar}/>
             <span>Paweł Białek</span>
           </NavLink>
@@ -48,13 +48,13 @@ export default class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/home"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/home"} replace>
                     <FontAwesomeIcon icon={faHome}/>
                     <span>Home</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/about"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/about"} replace>
                     <FontAwesomeIcon icon={faUser}/>
                     <span>About</span>
                   </NavLink>
@@ -66,7 +66,7 @@ export default class Menu extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"} replace>
                     <FontAwesomeIcon icon={faPhone}/>
                     <span>Contact</span>
                   </NavLink>
