@@ -76,12 +76,16 @@
   .navbar-nav {
     display: flex;
     align-items: center;
-    .nav-link {
-      font-size: 2em;
-      span {
-        padding-left: 1em;
+    .nav-item {
+      width: 100%;
+      .nav-link {
+        font-size: 2em;
+        span {
+          padding-left: 1em;
+        }
       }
     }
+
   }
 
   .navbar-brand {
@@ -96,7 +100,6 @@
     display: none;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .menu {
     display: flex;
@@ -105,13 +108,17 @@
     height: 100vh;
   }
 }
-
 // General -> without media queries
-
 .navbar-nav {
-  .nav-link {
-    span {
-      padding-left: 1em;
+  .nav-item {
+    .nav-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        padding-left: 1em;
+      }
     }
   }
 }
