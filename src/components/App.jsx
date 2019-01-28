@@ -4,7 +4,7 @@ import {TransitionGroup, CSSTransition} from "react-transition-group";
 
 import Menu from './Menu'
 import NotFound from './NotFound';
-import Start from './Start';
+import About from './About';
 
 export default class App extends Component {
   render() {
@@ -16,9 +16,8 @@ export default class App extends Component {
           </div>
           <div className="col-xl-7 bg-light">
             <Switch>
-              <Route exact path='/' component={Start}/>
-              <Route path='/home' component={Start}/>
-              <Route path='/about' component={NotFound}/>
+              <Route exact={true} path='/' component={About}/>
+              <Route path='/about' component={About}/>
               <Route path='/contact' component={NotFound}/>
               <Route component={NotFound}/>
             </Switch>

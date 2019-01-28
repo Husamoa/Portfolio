@@ -37,14 +37,14 @@ export default class Menu extends Component {
       <div className="menu">
         <div className="desktop-menu">
           <h1 className="text-uppercase text-center">
-            <strong>Front-end developer</strong>
+            <strong>Paweł Białek</strong>
           </h1>
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
-          <NavLink className="navbar-brand" to={"/"} replace="replace">
+          <NavLink className="navbar-brand" to={"/"} replace={true}>
             <FontAwesomeIcon icon={faStar}/>
-            <span>Paweł Białek</span>
+            <span>FRONT-END DEV</span>
           </NavLink>
           <div className="container-fluid">
             <div onClick={this.changeNavClass} id="nav-icon" className={this.state.navClass} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,25 +56,19 @@ export default class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/home"} replace="replace">
-                    <FontAwesomeIcon icon={faHome}/>
-                    <span>Home</span>
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/about"} replace="replace">
+                  <NavLink className="nav-link js-scroll-trigger" to={"/about"} replace={true}>
                     <FontAwesomeIcon icon={faUser}/>
                     <span>About</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"} replace={true}>
                     <FontAwesomeIcon icon={faFile}/>
                     <span>Portfolio</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"} replace="replace">
+                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"} replace={true}>
                     <FontAwesomeIcon icon={faPhone}/>
                     <span>Contact</span>
                   </NavLink>
