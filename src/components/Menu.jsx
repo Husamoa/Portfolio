@@ -1,9 +1,9 @@
 import React, {Component, Fragment} from 'react';
-import {NavLink, HashRouter, Route, Switch} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faStar, faUser, faHome, faPhone, faFile} from '@fortawesome/free-solid-svg-icons'
+import {faStar, faUser, faHome, faPhone, faFile} from '@fortawesome/free-solid-svg-icons';
+import { NavLink, withRouter } from 'react-router-dom';
 
-export default class Menu extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,7 +42,7 @@ export default class Menu extends Component {
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
-          <NavLink className="navbar-brand" to={"/"} replace={true}>
+          <NavLink className="navbar-brand" to={"/"}>
             <FontAwesomeIcon icon={faStar}/>
             <span>FRONT-END DEV</span>
           </NavLink>
@@ -56,19 +56,19 @@ export default class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/about"} replace={true}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/"}>
                     <FontAwesomeIcon icon={faUser}/>
                     <span>About</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"} replace={true}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"}>
                     <FontAwesomeIcon icon={faFile}/>
                     <span>Portfolio</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"} replace={true}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"}>
                     <FontAwesomeIcon icon={faPhone}/>
                     <span>Contact</span>
                   </NavLink>
@@ -81,3 +81,5 @@ export default class Menu extends Component {
     </Fragment>);
   }
 }
+
+export default Menu;
