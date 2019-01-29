@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const About = () => {
     return (
-      <div>
+      <section>
       <main className="background-start text-center text-white d-flex justify-content-center">
         <div className="container align-self-center">
           <div className="row">
@@ -22,7 +22,7 @@ const About = () => {
             </div>
           </div>
         </main>
-        </div>
+      </section>
       );
 }
 

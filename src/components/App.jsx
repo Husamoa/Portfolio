@@ -22,6 +22,7 @@ const App = ({location}) => {
           <CSSTransition key={currentKey} timeout={timeout} classNames="fade" appear={ true }>
             <Switch location={location}>
               <Route exact={true} path='/' component={About}/>
+              <Route exact={true} path='/about' component={About}/>
               <Route path='/contact' component={NotFound}/>
               <Route component={NotFound}/>
             </Switch>

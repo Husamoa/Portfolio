@@ -56,7 +56,7 @@ class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/about"}>
                     <FontAwesomeIcon icon={faUser}/>
                     <span>About</span>
                   </NavLink>
