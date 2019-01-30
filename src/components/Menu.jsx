@@ -36,14 +36,14 @@ class Menu extends Component {
     return (<Fragment>
       <div className="menu">
         <div className="desktop-menu">
-          <h1 className="text-uppercase text-center">
+          <h1 className="display-2 text-uppercase text-center">
             <strong>Paweł Białek</strong>
           </h1>
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
           <NavLink className="navbar-brand" to={"/"}>
-            <FontAwesomeIcon icon={faStar}/>
+            <FontAwesomeIcon icon={faUser}/>
             <span>FRONT-END DEV</span>
           </NavLink>
           <div className="container-fluid">
@@ -56,9 +56,9 @@ class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/about"}>
-                    <FontAwesomeIcon icon={faUser}/>
-                    <span>About</span>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/technologies"}>
+                    <FontAwesomeIcon icon={faStar}/>
+                    <span>Technologies</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
