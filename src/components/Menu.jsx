@@ -58,7 +58,7 @@ class Menu extends Component {
                 <li className="nav-item">
                   <NavLink className="nav-link js-scroll-trigger" to={"/technologies"}>
                     <FontAwesomeIcon icon={faStar}/>
-                    <span>Technologies</span>
+                    <span>Skills</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">

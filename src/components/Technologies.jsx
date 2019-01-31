@@ -1,21 +1,18 @@
 import React from 'react';
 
 const Technologies = () => {
-  return(
-    <section id="services">
+  return (<section className="d-flex flex-column justify-content-center align-items-center">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className="section-heading">Technologie</h2>
+          <h2 className="section-heading">Skills</h2>
           <hr className="my-4"/>
         </div>
       </div>
-    </div>
-    <div className="container">
       <div className="row">
         <div className="col-lg-3 col-md-6 text-center">
-          <div className="service-box mt-5 mx-auto sr-button">
-            <img src="images/icons/html.png" height="100"/>
+          <div className="service-box mt-5 mx-auto">
+            <img className="sr-button" src="images/icons/html.png" height="100"/>
             <h3 className="mb-3">HTML5</h3>
           </div>
         </div>
@@ -55,10 +52,15 @@ const Technologies = () => {
             <h3 className="mb-3">React.js</h3>
           </div>
         </div>
+        <div className="col-lg-3 col-md-6 text-center">
+          <div className="service-box mt-5 mx-auto">
+            <img className="sr-button" src="images/icons/node.png" height="100" alt="Logo node.js"/>
+            <h3 className="mb-3">React.js</h3>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  )
+  </section>)
 }
 
 export default Technologies;
