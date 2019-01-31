@@ -1,5 +1,6 @@
 .sr-button {
+    transition: transform 500ms;
   &:hover {
-    height: 120px;
+    transform: scale(1.2);
   }
 }
