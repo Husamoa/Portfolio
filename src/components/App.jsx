@@ -5,7 +5,8 @@ import Menu from './Menu'
 import NotFound from './NotFound';
 import About from './About';
 import Technologies from './Technologies';
-import Contact from './Contact'
+import Contact from './Contact';
+import Portfolio from './Portfolio'
 
 const App = ({location}) => {
 
@@ -21,6 +22,7 @@ const App = ({location}) => {
           <CSSTransition key={currentKey} timeout={300} classNames="fade" appear={ true }>
             <Switch location={location}>
               <Route exact={true} path='/' component={About}/>
+              <Route path='/portfolio' component={Portfolio}/>
               <Route path='/technologies' component={Technologies}/>
               <Route path='/contact' component={Contact}/>
               <Route component={NotFound}/>
