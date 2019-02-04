@@ -42,7 +42,7 @@ class Menu extends Component {
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
-          <NavLink className="navbar-brand" to={"/"}>
+          <NavLink onClick={ this.closeMenu } className="navbar-brand" to={"/"} replace>
             <FontAwesomeIcon icon={faUser}/>
             <span>FRONT-END DEV</span>
           </NavLink>
@@ -56,19 +56,19 @@ class Menu extends Component {
             <div className={`collapse navbar-collapse`} id="navbarNav" onClick={this.closeMenu}>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/technologies"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/technologies"} replace>
                     <FontAwesomeIcon icon={faStar}/>
                     <span>Skills</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/portfolio"} replace>
                     <FontAwesomeIcon icon={faFile}/>
                     <span>Portfolio</span>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"}>
+                  <NavLink className="nav-link js-scroll-trigger" to={"/contact"} replace>
                     <FontAwesomeIcon icon={faPhone}/>
                     <span>Contact</span>
                   </NavLink>

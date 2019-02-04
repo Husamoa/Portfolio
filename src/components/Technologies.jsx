@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Technologies = () => {
-  return (<section className="d-flex flex-column justify-content-center align-items-center">
+  return (<section>
+    <main className="d-flex flex-column justify-content-center align-items-center">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -62,6 +63,7 @@ const Technologies = () => {
         </div>
       </div>
     </div>
+  </main>
   </section>)
 }
 
