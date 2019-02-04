@@ -21,7 +21,8 @@ section {
 @media only screen and (min-width: 1200px) {
   .contact,
   .technologies,
-  .background-start {
+  .background-start,
+  .portfolio {
     height: 100vh; } }
 
 @media only screen and (max-width: 1200px) {
@@ -74,8 +75,6 @@ section {
       width: 100%; }
       .navbar-nav .nav-item .nav-link {
         font-size: 2em; }
-        .navbar-nav .nav-item .nav-link span {
-          padding-left: 1em; }
   .navbar-brand {
     width: 100%;
     font-size: 2em;
@@ -90,15 +89,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh; } }
+    height: 100vh; }
+    .menu .navbar-nav .nav-item .nav-link {
+      padding-left: 1em; } }
 
 .navbar-nav .nav-item .nav-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .navbar-nav .nav-item .nav-link span {
-    padding-left: 1em; }
 
 .navbar-brand span {
   padding-left: 1em; }

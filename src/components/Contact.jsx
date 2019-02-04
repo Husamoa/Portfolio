@@ -18,13 +18,17 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-lg-4 ml-auto text-center">
-            <FontAwesomeIcon icon={faPhone}/>
-            <p>668-336-781</p>
+            <a href="tel:+48-668-336-781">
+            <FontAwesomeIcon icon={faPhone} color="black" size="lg"/>
+            </a>
+            <p>668 336 781</p>
           </div>
           <div className="col-lg-4 mr-auto text-center">
-            <FontAwesomeIcon icon={faEnvelope}/>
+            <a href="mailto:kontakt@pawelbialek.pl">
+            <FontAwesomeIcon icon={faEnvelope} color="black" size="lg"/>
+            </a>
             <p>
-              <a href="mailto:kontakt@pawelbialek.pl">kontakt@pawelbialek.pl</a>
+              <span>kontakt@pawelbialek.pl</span>
             </p>
           </div>
         </div>
