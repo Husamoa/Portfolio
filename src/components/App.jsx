@@ -16,7 +16,7 @@ const App = ({location}) => {
       <div className="col-xl-5 bg-light">
         <Menu/>
       </div>
-      <div className="col-xl-7 bg-light d-flex">
+      <div className="col-xl-7 d-flex">
         <TransitionGroup component="main" className="main-page">
           <CSSTransition key={currentKey} timeout={300} classNames="fade" appear={ true }>
             <Switch location={location}>

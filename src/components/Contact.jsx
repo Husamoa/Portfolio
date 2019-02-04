@@ -4,8 +4,8 @@ import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (<section>
-    <main className="d-flex flex-column justify-content-center align-items-center">
-    <div className="container">
+    <main className="contact d-flex flex-column justify-content-center">
+    <div className="container align-self-center">
       <div className="row">
         <div className="col-lg-8 mx-auto text-center">
           <h1>
