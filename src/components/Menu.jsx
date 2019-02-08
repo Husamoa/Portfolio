@@ -44,15 +44,15 @@ class Menu extends Component {
     return (<Fragment>
       <div className="menu">
         <div className="desktop-menu">
-          <h1 className="display-2 text-uppercase text-center">
-            <strong>Paweł Białek</strong>
+          <h1 className="display-4 text-uppercase text-center">
+            <strong>Front-End Developer</strong>
           </h1>
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
           <NavLink onClick={ this.closeMenuCloseHamburgerMenu } className="navbar-brand" to={"/"} replace>
             <FontAwesomeIcon icon={faUser}/>
-            <span>FRONT-END DEV</span>
+            <span>Paweł Białek</span>
           </NavLink>
           <div className="container-fluid">
             <div onClick={this.changeNavClass} id="nav-icon" className={this.state.navClass} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
