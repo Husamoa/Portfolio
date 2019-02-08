@@ -33,6 +33,10 @@ section {
   .portfolio {
     padding-top: 3em;
   }
+
+  .main-page {
+    overflow: auto;
+  }
 }
 @media only screen and (max-width: 1200px) {
   main {

@@ -9,7 +9,6 @@ import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Loading from './ReactLoading';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -42,9 +41,9 @@ class App extends Component {
 
     return (<div>
       <div className="row no-gutters">
-        <div className="col-xl-5 bg-light">
-          <Menu/>
-        </div>
+          <div className="col-xl-5 bg-light">
+            <Menu/>
+          </div>
         <div className="col-xl-7 d-flex">
           <TransitionGroup component="main" className="main-page">
             <CSSTransition key={currentKey} timeout={300} classNames="fade" appear={true}>

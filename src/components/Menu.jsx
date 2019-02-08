@@ -41,7 +41,7 @@ class Menu extends Component {
   myPhotoMobile = () => {
     if(window.innerWidth <= 1199) {
       return(
-        <div id="image-cropper">
+        <div id="image-cropper" className="mx-auto d-block">
           <img id="my-photo" src="images/my-photo.jpg"/>
         </div>
       )
