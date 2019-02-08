@@ -29,7 +29,15 @@ class Menu extends Component {
         this.setState({navClass: ""})
       }
     }
+  }
 
+  closeMenuCloseHamburgerMenu = () => {
+    if(window.innerWidth <= 1199 ) {
+      $('.collapse').collapse("hide");
+      this.setState({
+        navClass: ""
+      })
+    }
   }
 
   render() {
@@ -42,7 +50,7 @@ class Menu extends Component {
           <hr/>
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
-          <NavLink onClick={ this.closeMenu } className="navbar-brand" to={"/"} replace>
+          <NavLink onClick={ this.closeMenuCloseHamburgerMenu } className="navbar-brand" to={"/"} replace>
             <FontAwesomeIcon icon={faUser}/>
             <span>FRONT-END DEV</span>
           </NavLink>
