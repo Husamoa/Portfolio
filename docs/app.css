@@ -110,16 +110,15 @@ section {
       border-radius: 50%; }
       .menu #image-cropper #my-photo {
         height: 100%;
-        width: auto; } }
+        width: auto; }
+    .menu .navbar-brand span {
+      padding-left: 1em; } }
 
 .navbar-nav .nav-item .nav-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.navbar-brand span {
-  padding-left: 1em; }
 
 .background-start {
   background-image: url(images/header.jpg);
