@@ -25,6 +25,7 @@ import { Link } from 'react-router-dom';
 const styles = theme => ({
   card: {
     maxWidth: 400,
+    marginBottom: '1rem',
   },
   media: {
     height: 0,
@@ -59,7 +60,7 @@ class RecipeReviewCard extends React.Component {
     const { classes, title, subheader, imageURL, URL, GitHubURL, logoURL, abstract, cardContent } = this.props;
 
     return (
-      <Card className={classes.card}>
+      <Card className={`${classes.card}`}>
         <CardHeader
           avatar={
             <Avatar aria-label="Portfolio" className={classes.avatar} src={logoURL} />
