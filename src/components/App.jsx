@@ -6,8 +6,9 @@ import NotFound from './NotFound';
 import About from './About';
 import Technologies from './Technologies';
 import Contact from './Contact';
-import Portfolio from './Portfolio'
-import Loading from './ReactLoading'
+import Portfolio from './Portfolio';
+import Loading from './ReactLoading';
+
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.timerHandle = setTimeout(() => this.setState({isLoading: false}), 3500);
+    this.timerHandle = setTimeout(() => this.setState({isLoading: false}), 2500);
   }
 
   componentWillUnmount() {
@@ -37,7 +38,7 @@ class App extends Component {
       </section>);
     }
 
-    const currentKey = location.pathname.split('/')[1] || '/';
+    const currentKey = this.props.location.pathname.split('/')[1] || '/';
 
     return (<div>
       <div className="row no-gutters">
@@ -46,7 +47,7 @@ class App extends Component {
         </div>
         <div className="col-xl-7 d-flex">
           <TransitionGroup component="main" className="main-page">
-            <CSSTransition timeout={300} classNames="fade" appear={true}>
+            <CSSTransition key={currentKey} timeout={300} classNames="fade" appear={true}>
               <Switch location={this.props.location}>
                 <Route exact={true} path='/' component={About}/>
                 <Route path='/portfolio' component={Portfolio}/>

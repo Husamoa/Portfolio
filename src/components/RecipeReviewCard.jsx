@@ -20,6 +20,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import { Facebook } from 'react-content-loader'
+
+const MyFacebookLoader = () => <Facebook />
+
 
 
 const styles = theme => ({
@@ -50,6 +54,7 @@ const styles = theme => ({
 });
 
 class RecipeReviewCard extends React.Component {
+  
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -57,6 +62,7 @@ class RecipeReviewCard extends React.Component {
   };
 
   render() {
+
     const { classes, title, subheader, imageURL, URL, GitHubURL, logoURL, abstract, cardContent } = this.props;
 
     return (
