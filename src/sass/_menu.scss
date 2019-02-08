@@ -76,13 +76,14 @@
   .navbar-nav {
     display: flex;
     align-items: center;
+
     .nav-item {
       width: 100%;
+
       .nav-link {
         font-size: 2em;
       }
     }
-
   }
 
   .navbar-brand {
@@ -91,6 +92,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .menu {
+    #image-cropper {
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      #my-photo {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 
   .desktop-menu {
@@ -103,6 +118,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -110,9 +126,22 @@
         }
       }
     }
+
+    #image-cropper {
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      #my-photo {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 }
 // General -> without media queries
+
 .navbar-nav {
   .nav-item {
     .nav-link {

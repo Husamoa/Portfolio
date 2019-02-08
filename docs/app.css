@@ -82,6 +82,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .menu #image-cropper {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%; }
+    .menu #image-cropper #my-photo {
+      height: 100%;
+      width: auto; }
   .desktop-menu {
     display: none; } }
 
@@ -92,7 +100,15 @@ section {
     justify-content: center;
     height: 100vh; }
     .menu .navbar-nav .nav-item .nav-link {
-      padding-left: 1em; } }
+      padding-left: 1em; }
+    .menu #image-cropper {
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 50%; }
+      .menu #image-cropper #my-photo {
+        height: 100%;
+        width: auto; } }
 
 .navbar-nav .nav-item .nav-link {
   display: flex;
