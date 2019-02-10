@@ -148,5 +148,9 @@ section {
 .sr-button {
   transition: transform 500ms; }
   .sr-button:hover {
+    cursor: pointer;
     transform: scale(1.2); }
+
+.checked {
+  color: orange; }
 
