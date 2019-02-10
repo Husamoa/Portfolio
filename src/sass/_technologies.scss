@@ -1,11 +1,28 @@
-.sr-button {
-    transition: transform 500ms;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+.checked {
+  color: orange;
+}
+
+@media only screen and (max-width: 1199px) {
+  .tooltip {
+    display: none !important;
+  }
+
+  .tooltip-mobile {
+    margin-bottom: 1em;
   }
 }
 
-.checked {
-  color: orange;
+@media only screen and (min-width: 1200px) {
+
+  .sr-button {
+      transition: transform 500ms;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  .tooltip-mobile {
+    display: none !important;
+  }
 }
