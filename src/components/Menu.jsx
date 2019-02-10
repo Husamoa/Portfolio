@@ -38,20 +38,6 @@ class Menu extends Component {
     }
   }
 
-  myPhotoMobile = () => {
-    if(window.innerWidth <= 1199) {
-      return(
-        <div id="image-cropper" className="mx-auto d-block">
-          <img id="my-photo" src="images/my-photo.jpg"/>
-        </div>
-      )
-    } else {
-      return(
-        <FontAwesomeIcon icon={faUser}/>
-      )
-    }
-  }
-
   render() {
     return (<Fragment>
       <div className="menu">
@@ -66,7 +52,10 @@ class Menu extends Component {
         </div>
         <nav className="navbar navbar-expand-xl navbar-light bg-light">
           <NavLink onClick={this.closeMenuCloseHamburgerMenu} className="navbar-brand" to={"/"} replace={true}>
-            {this.myPhotoMobile()}
+            <div id="image-cropper" className="image-mobile">
+              <img id="my-photo" src="images/my-photo.jpg"/>
+            </div>
+            <FontAwesomeIcon className="icon-desktop" icon={faUser}/>
             <span>Paweł Białek</span>
           </NavLink>
           <div className="container-fluid">
