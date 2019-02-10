@@ -1,6 +1,7 @@
 .sr-button {
     transition: transform 500ms;
   &:hover {
+    cursor: pointer;
     transform: scale(1.2);
   }
 }
