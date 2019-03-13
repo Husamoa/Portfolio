@@ -91,8 +91,8 @@ section {
     border-radius: 50%;
     margin-right: 1em; }
     .menu #image-cropper #my-photo {
-      height: 100%;
-      width: auto; }
+      height: auto;
+      width: 100%; }
   .menu .icon-desktop {
     display: none; }
   .desktop-menu {
@@ -114,8 +114,8 @@ section {
       overflow: hidden;
       border-radius: 50%; }
       .menu #image-cropper #my-photo {
-        height: 100%;
-        width: auto; }
+        height: auto;
+        width: 100%; }
     .menu .navbar-brand span {
       padding-left: 1em; } }
 
